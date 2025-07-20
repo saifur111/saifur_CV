@@ -169,7 +169,13 @@ const certificates = {
         provider: "Learnwithsumit.com",
         year: "2023",
         filename: "fullstack_certificate.pdf" // Change this to your actual file name
-    }
+    },
+    wpr: {
+        title: "Work Permit Receiver",
+        provider: "Adeptus",
+        year: "2025",
+        filename: "wpr_certificate.pdf" // Change this to your actual file name
+    },
 };
 
 let currentCertificateFile = '';
