@@ -166,8 +166,8 @@ const certificates = {
     },
     fullstack: {
         title: "Full Stack Web Design & Development",
-        provider: "Learnwithsumit.com",
-        year: "2023",
+        provider: "Programming Hero",
+        year: "2021",
         filename: "fullstack_certificate.pdf" // Change this to your actual file name
     },
     wpr: {
