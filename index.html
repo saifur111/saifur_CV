@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="container">
+<div class="container">
         <!-- Header Card -->
         <div class="card">
             <div class="header">
@@ -54,19 +54,10 @@
             <div class="section">
                 <h2>Professional Summary</h2>
                 <p class="summary">
-                    Multiskilled professional with hands-on experience in Work Permit Receiving, Document Control, and
-                    Frontend Web Development, currently working in Saudi Arabia. At present, employed with Al Bawani
-                    Company on the high-profile Lucid Motors Project in Jeddah, alongside consultant Hill International
-                    and client Lucid. Skilled in managing all types of work permits (hot work, confined space,
-                    excavation, working at height), ensuring compliance with HSE regulations and project safety
-                    protocols.
+                    Multiskilled professional with hands-on experience in Work Permit Receiving, Document Control, and Frontend Web Development, currently working in Saudi Arabia. At present, employed with Al Bawani Company on the high-profile Lucid Motors Project in Jeddah, alongside consultant Hill International and client Lucid. Skilled in managing all types of work permits (hot work, confined space, excavation, working at height), ensuring compliance with HSE regulations and project safety protocols.
                 </p>
                 <p class="summary">
-                    Experienced in document control, maintaining accurate records, tracking permit logs, and ensuring
-                    efficient document flow across departments. Highly organized with strong command over Microsoft
-                    Office, Excel-based tracking systems, and digital filing. Also equipped with technical expertise as
-                    a Frontend Web Developer, bringing a rare combination of field safety, technical documentation, and
-                    IT capability to any team.
+                    Experienced in document control, maintaining accurate records, tracking permit logs, and ensuring efficient document flow across departments. Highly organized with strong command over Microsoft Office, Excel-based tracking systems, and digital filing. Also equipped with technical expertise as a Frontend Web Developer, bringing a rare combination of field safety, technical documentation, and IT capability to any team.
                 </p>
             </div>
         </div>
@@ -75,7 +66,7 @@
         <div class="card">
             <div class="section">
                 <h2>Work Experience</h2>
-
+                
                 <div class="experience-item">
                     <div class="job-title">Work Permit Receiver (WPR)</div>
                     <div class="company-info">
@@ -98,8 +89,7 @@
                             <span class="info-label">Project Value:</span> 230 million SAR
                         </div>
                     </div>
-                    <p><strong>Project:</strong> Lucid Advanced Manufacturing Plant (KAEC) - Providing MEP Services
-                        Phase I & II</p>
+                    <p><strong>Project:</strong> Lucid Advanced Manufacturing Plant (KAEC) - Providing MEP Services Phase I & II</p>
                 </div>
 
                 <div class="experience-item">
@@ -121,8 +111,7 @@
                             <span class="info-label">Project Value:</span> $310 million
                         </div>
                     </div>
-                    <p><strong>Project:</strong> Construction of New Diriyah Gate 380/132/13.8kv BSP 9082 - 1707 MVA &
-                        200 MVA capacity substations</p>
+                    <p><strong>Project:</strong> Construction of New Diriyah Gate 380/132/13.8kv BSP 9082 - 1707 MVA & 200 MVA capacity substations</p>
                 </div>
             </div>
         </div>
@@ -160,7 +149,7 @@
         <div class="card">
             <div class="section">
                 <h2>Education</h2>
-
+                
                 <div class="education-item">
                     <div class="degree">B.Sc. in Computer Science Engineering</div>
                     <div class="institution">International Islamic University Chittagong</div>
@@ -175,43 +164,157 @@
             </div>
         </div>
 
-        <!-- Certifications -->
+        <!-- TÜV Certifications -->
+        <div class="card">
+            <div class="tuv-section">
+                <div class="tuv-header">
+                    <div class="tuv-logo">🏆</div>
+                    <h2 class="tuv-title">TÜV Certifications</h2>
+                    <p class="tuv-subtitle">International Safety & Quality Standards</p>
+                </div>
+                
+                <div class="tuv-cards">
+                    <div class="tuv-card" onclick="viewTuvCertificate('safety')">
+                        <div class="tuv-card-icon">🛡️</div>
+                        <h3 class="tuv-card-title">TÜV Safety Certification</h3>
+                        <p class="tuv-card-desc">Industrial Safety Standards & HSE Compliance</p>
+                        <button class="tuv-card-btn">View Certificate</button>
+                    </div>
+                    
+                    <div class="tuv-card" onclick="viewTuvCertificate('quality')">
+                        <div class="tuv-card-icon">⚙️</div>
+                        <h3 class="tuv-card-title">TÜV Quality Management</h3>
+                        <p class="tuv-card-desc">Quality Assurance & Process Management</p>
+                        <button class="tuv-card-btn">View Certificate</button>
+                    </div>
+                    
+                    <div class="tuv-card" onclick="viewTuvCertificate('technical')">
+                        <div class="tuv-card-icon">🔧</div>
+                        <h3 class="tuv-card-title">TÜV Technical Standards</h3>
+                        <p class="tuv-card-desc">Technical Equipment & System Certification</p>
+                        <button class="tuv-card-btn">View Certificate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Professional Work Gallery -->
+        <div class="card">
+            <div class="section">
+                <h2>Professional Work Gallery</h2>
+                <p style="text-align: center; color: #7f8c8d; margin-bottom: 30px;">
+                    Showcasing my hands-on experience in permit management, site operations, and document control
+                </p>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item" onclick="viewGalleryItem('permits')">
+                        <div class="gallery-image">📋</div>
+                        <div class="gallery-content">
+                            <h3 class="gallery-title">Work Permit Management</h3>
+                            <p class="gallery-description">Hot work, confined space, excavation, and working at height permit documentation and coordination with HSE teams.</p>
+                            <div class="gallery-tags">
+                                <span class="gallery-tag">Hot Work</span>
+                                <span class="gallery-tag">Confined Space</span>
+                                <span class="gallery-tag">HSE</span>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="gallery-btn primary">View Details</button>
+                                <button class="gallery-btn" onclick="event.stopPropagation(); downloadGalleryItem('permits')">Download</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" onclick="viewGalleryItem('lucid')">
+                        <div class="gallery-image">⚡</div>
+                        <div class="gallery-content">
+                            <h3 class="gallery-title">Lucid Motors Project</h3>
+                            <p class="gallery-description">MEP services coordination for Lucid Advanced Manufacturing Plant at KAEC - 230 million SAR project value.</p>
+                            <div class="gallery-tags">
+                                <span class="gallery-tag">MEP Services</span>
+                                <span class="gallery-tag">KAEC</span>
+                                <span class="gallery-tag">230M SAR</span>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="gallery-btn primary">View Details</button>
+                                <button class="gallery-btn" onclick="event.stopPropagation(); downloadGalleryItem('lucid')">Download</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" onclick="viewGalleryItem('substation')">
+                        <div class="gallery-image">⚡</div>
+                        <div class="gallery-content">
+                            <h3 class="gallery-title">Diriyah Gate Substation</h3>
+                            <p class="gallery-description">Document control for 380/132/13.8kv substation construction - $310 million project with Saudi Electricity Company.</p>
+                            <div class="gallery-tags">
+                                <span class="gallery-tag">Substation</span>
+                                <span class="gallery-tag">Document Control</span>
+                                <span class="gallery-tag">$310M</span>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="gallery-btn primary">View Details</button>
+                                <button class="gallery-btn" onclick="event.stopPropagation(); downloadGalleryItem('substation')">Download</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" onclick="viewGalleryItem('safety')">
+                        <div class="gallery-image">🛡️</div>
+                        <div class="gallery-content">
+                            <h3 class="gallery-title">Safety Documentation</h3>
+                            <p class="gallery-description">HSE compliance documentation, safety protocols, and risk assessment support for industrial projects.</p>
+                            <div class="gallery-tags">
+                                <span class="gallery-tag">Safety Protocols</span>
+                                <span class="gallery-tag">Risk Assessment</span>
+                                <span class="gallery-tag">HSE</span>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="gallery-btn primary">View Details</button>
+                                <button class="gallery-btn" onclick="event.stopPropagation(); downloadGalleryItem('safety')">Download</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" onclick="viewGalleryItem('coordination')">
+                        <div class="gallery-image">🤝</div>
+                        <div class="gallery-content">
+                            <h3 class="gallery-title">Client Coordination</h3>
+                            <p class="gallery-description">Coordination with consultants, clients, and site teams ensuring smooth project operations and documentation flow.</p>
+                            <div class="gallery-tags">
+                                <span class="gallery-tag">Client Relations</span>
+                                <span class="gallery-tag">Coordination</span>
+                                <span class="gallery-tag">Operations</span>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="gallery-btn primary">View Details</button>
+                                <button class="gallery-btn" onclick="event.stopPropagation(); downloadGalleryItem('coordination')">Download</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" onclick="viewGalleryItem('documentation')">
+                        <div class="gallery-image">📁</div>
+                        <div class="gallery-content">
+                            <h3 class="gallery-title">Document Control Systems</h3>
+                            <p class="gallery-description">Digital filing systems, permit tracking, and document management using Microsoft Office and specialized software.</p>
+                            <div class="gallery-tags">
+                                <span class="gallery-tag">Digital Filing</span>
+                                <span class="gallery-tag">MS Office</span>
+                                <span class="gallery-tag">Tracking</span>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="gallery-btn primary">View Details</button>
+                                <button class="gallery-btn" onclick="event.stopPropagation(); downloadGalleryItem('documentation')">Download</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="card">
             <div class="section">
                 <h2>Certifications</h2>
-                <div class="certificate-card">
-                    <div class="certificate-header">
-                        <h3 class="certificate-title">Work Permit Receiver</h3>
-                        <span class="certificate-year">2025</span>
-                    </div>
-                    <div class="certificate-provider">ADEPTUS</div>
-                    <div class="certificate-actions">
-                        <button class="cert-btn" onclick="viewCertificate('wpr')">👁️ View Certificate</button>
-                        <button class="cert-btn" onclick="downloadCertificate('wpr')">📄 Download PDF</button>
-                    </div>
-                </div>
-                <div class="certificate-card">
-                    <div class="certificate-header">
-                        <h3 class="certificate-title">Full Stack Web Design & Development</h3>
-                        <span class="certificate-year">2021</span>
-                    </div>
-                    <div class="certificate-provider">Programming Hero</div>
-                    <div class="certificate-actions">
-                        <button class="cert-btn" onclick="viewCertificate('fullstack')">👁️ View Certificate</button>
-                        <button class="cert-btn" onclick="downloadCertificate('fullstack')">📄 Download PDF</button>
-                    </div>
-                </div>
-                <div class="certificate-card">
-                    <div class="certificate-header">
-                        <h3 class="certificate-title">Complete Web Design & Development</h3>
-                        <span class="certificate-year">2021</span>
-                    </div>
-                    <div class="certificate-provider">SIMEC SYSTEM LTD</div>
-                    <div class="certificate-actions">
-                        <button class="cert-btn" onclick="viewCertificate('webdesign')">👁️ View Certificate</button>
-                        <button class="cert-btn" onclick="downloadCertificate('webdesign')">📄 Download PDF</button>
-                    </div>
-                </div>
+                
                 <div class="certificate-card">
                     <div class="certificate-header">
                         <h3 class="certificate-title">Complete CompTIA Network+</h3>
@@ -224,6 +327,29 @@
                     </div>
                 </div>
 
+                <div class="certificate-card">
+                    <div class="certificate-header">
+                        <h3 class="certificate-title">Complete Web Design & Development</h3>
+                        <span class="certificate-year">2021</span>
+                    </div>
+                    <div class="certificate-provider">SIMEC SYSTEM LTD</div>
+                    <div class="certificate-actions">
+                        <button class="cert-btn" onclick="viewCertificate('webdesign')">👁️ View Certificate</button>
+                        <button class="cert-btn" onclick="downloadCertificate('webdesign')">📄 Download PDF</button>
+                    </div>
+                </div>
+
+                <div class="certificate-card">
+                    <div class="certificate-header">
+                        <h3 class="certificate-title">Full Stack Web Design & Development</h3>
+                        <span class="certificate-year">2023</span>
+                    </div>
+                    <div class="certificate-provider">Learnwithsumit.com</div>
+                    <div class="certificate-actions">
+                        <button class="cert-btn" onclick="viewCertificate('fullstack')">👁️ View Certificate</button>
+                        <button class="cert-btn" onclick="downloadCertificate('fullstack')">📄 Download PDF</button>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -248,6 +374,41 @@
                         <div class="language-name">Hindi</div>
                         <div class="proficiency">Working Proficiency</div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TÜV Certificate Modal -->
+    <div id="tuvModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="tuvModalTitle">TÜV Certificate</h2>
+                <span class="close" onclick="closeTuvModal()">&times;</span>
+            </div>
+            <iframe id="tuvPdfViewer" class="pdf-viewer" src="" type="application/pdf"></iframe>
+            <div class="modal-footer">
+                <button id="tuvDownloadBtn" class="modal-btn download" onclick="downloadCurrentTuv()">
+                    📄 Download TÜV Certificate
+                </button>
+                <button class="modal-btn" onclick="openTuvInNewTab()">
+                    🔗 Open in New Tab
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Modal -->
+    <div id="galleryModal" class="gallery-modal">
+        <div class="gallery-modal-content">
+            <div class="gallery-modal-header">
+                <h2 id="galleryModalTitle">Work Gallery</h2>
+                <span class="close" onclick="closeGalleryModal()">&times;</span>
+            </div>
+            <div class="gallery-modal-body">
+                <div id="galleryModalImage" class="gallery-modal-image">📸</div>
+                <div id="galleryModalContent">
+                    <!-- Gallery content will be dynamically inserted here -->
                 </div>
             </div>
         </div>
